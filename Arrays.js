@@ -1,3 +1,6 @@
+///////////////
+//Find the sum of two arrays containing integers while removing any duplicates
+
 const arrayOne = [3,5,3,4,3,4,1,67,4];
 const arrayTwo = [23,45,45,34,5];
 
@@ -13,7 +16,10 @@ const addTwoArrays = (arr1, arr2) => {
 
   //   return sum
 };
-
 console.log(addTwoArrays(arrayOne, arrayTwo))
 
+/////////////////////
+//Return true or false if there is a match between two arrays
+/////////////////////
+const 
 
