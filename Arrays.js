@@ -42,5 +42,19 @@ const commonItems = (arr1, arr2) => {
 
 console.log(commonItems(array1, array2));
 
+/////////////////////
+//Return true if a string is a palindrome
+/////////////////////
 const isPalindrome = str => str.split("").reverse().join("") === str;
-console.log(isPalindrome('hannah'))
+console.log(isPalindrome('hannah'));
+
+/////////////////////
+//Return first and last index of a sorted array
+/////////////////////
+const sortedArray = [1, 2, 3, 4, 5, 6, 7]
+const firstAndLast = number => {
+  let first = number.slice(0, 1);
+  let last = number.slice(number.length -1);
+  
+}
+console.log(firstAndLast(sortedArray))
