@@ -21,5 +21,26 @@ console.log(addTwoArrays(arrayOne, arrayTwo))
 /////////////////////
 //Return true or false if there is a match between two arrays
 /////////////////////
-const 
+const array1 = ['a', 'b', 'c'];
+const array2 = ['a', 'y', 'z'];
 
+const commonItems = (arr1, arr2) => {
+  // for(let i = 0; i < arr1.length; i++) {
+  //   for(let j = 0; j < arr2.length; j++) {
+  //     if(arr1[i] === arr2[j]) {
+  //       return true
+  //     }
+  //   }
+  // }
+  // return false;
+  const {...obj} = arr1;
+  console.log(obj);
+  for(let i = 0; i < arr2.length; i++) {
+    
+  }
+};
+
+console.log(commonItems(array1, array2));
+
+const isPalindrome = str => str.split("").reverse().join("") === str;
+console.log(isPalindrome('hannah'))
