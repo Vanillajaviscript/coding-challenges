@@ -53,9 +53,12 @@ console.log(isPalindrome('hannah'));
 /////////////////////
 const sortedArray = [1, 2, 3, 4, 5, 6, 7]
 const firstAndLast = number => {
-  number.filter(a => a < 2);
-
-  
+  let first = number[0];
+  let last = number[number.length - 1];
+  let final = []
+  final.push(first)
+  final.push(last);
+  return final
 }
 console.log(firstAndLast(sortedArray));
 
@@ -64,8 +67,9 @@ console.log(firstAndLast(sortedArray));
 /////////////////////
 const name = "javier"
 const reverseString = (str) => {
+  let reversed;
   for(let i = str.length - 1; i >= 0; i--) {
-    str[i];
+    ;
 
   }
 };
