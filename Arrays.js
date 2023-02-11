@@ -53,8 +53,12 @@ console.log(isPalindrome('hannah'));
 /////////////////////
 const sortedArray = [1, 2, 3, 4, 5, 6, 7]
 const firstAndLast = number => {
-  let first = number.slice(0, 1);
-  let last = number.slice(number.length -1);
+  number.filter(a => a < 2);
+
   
 }
-console.log(firstAndLast(sortedArray))
+console.log(firstAndLast(sortedArray));
+
+//////////////////////
+//
+/////////////////////
