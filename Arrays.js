@@ -66,7 +66,10 @@ const name = "javier"
 const reverseString = (str) => {
   for(let i = str.length - 1; i >= 0; i--) {
     str[i];
+
   }
 };
 
 console.log(reverseString(name));
+const reverseStringRefactored = str => str.split("").reverse().join("");
+console.log(reverseStringRefactored(name))
