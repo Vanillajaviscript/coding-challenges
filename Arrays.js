@@ -116,5 +116,12 @@ console.log(Kth_greatest_in_array([1,2,6,4,5], 3))
 console.log(Kth_greatest_in_array([-10,-25,-47,-36,0], 1));
 
 const evenOrOdd = (num) => {
-  
-}
+  if(num % 2 === 0) {
+    return "Even"
+  } else{
+    return "odd"
+  }
+};
+const evenOddRefactord = num => num % 2 === 0 ? "Even" : "Odd";
+console.log(evenOddRefactord(3))
+console.log(evenOrOdd(2))
