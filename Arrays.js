@@ -55,10 +55,10 @@ const sortedArray = [1, 2, 3, 4, 5, 6, 7]
 const firstAndLast = number => {
   let first = number[0];
   let last = number[number.length - 1];
-  let final = []
-  final.push(first)
+  let final = [];
+  final.push(first);
   final.push(last);
-  return final
+  return final;
 }
 console.log(firstAndLast(sortedArray));
 
@@ -69,7 +69,7 @@ const name = "javier"
 const reverseString = (str) => {
   let reversed;
   for(let i = str.length - 1; i >= 0; i--) {
-    ;
+    str[i];
 
   }
 };
@@ -77,3 +77,40 @@ const reverseString = (str) => {
 console.log(reverseString(name));
 const reverseStringRefactored = str => str.split("").reverse().join("");
 console.log(reverseStringRefactored(name))
+
+
+const fizzBuzz = () => {
+  for(let i = 0; i <= 20; i++) {
+    if(i % 3 === 0 && i % 5 === 0) {
+      console.log("FizzBuzz")
+    } else if(i % 3 === 0) {
+      console.log("Fizz")
+    } else if(i % 5 === 0) {
+      console.log("Buzz")
+    } 
+  }
+};
+console.log(fizzBuzz());
+
+
+function Kth_greatest_in_array(arr, k) {
+
+  for (var i = 0; i < k; i++) {
+    var max_index = i,
+      tmp = arr[i];
+
+    for (var j = i + 1; j < arr.length; j++) {
+      if (arr[j] > arr[max_index]) {
+        max_index = j;
+      }
+    }
+
+    arr[i] = arr[max_index];
+    arr[max_index] = tmp;
+  }
+
+  return arr[k - 1];
+}
+
+console.log(Kth_greatest_in_array([1,2,6,4,5], 3))
+console.log(Kth_greatest_in_array([-10,-25,-47,-36,0], 1))
