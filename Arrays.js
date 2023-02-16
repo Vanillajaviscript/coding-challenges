@@ -134,8 +134,16 @@ console.log(evenOrOdd(2));
 ////////////////
 
 const vowelCount = count => {
+  let vowelNum = 0;
   let vowels = ['a', 'i', 'u', 'e', 'o'];
-  
+  for(let i = 0; i < count.length; i++) {
+    for(let j = 0; j < vowels.length; j++) {
+      if(count[i] === vowels[j]) {
+        vowelNum++
+      }
+    }
+  }
+  return vowelNum
 };
 
-console.log(vowelCount())
+console.log(vowelCount("Letter"))
